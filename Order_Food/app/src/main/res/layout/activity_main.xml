@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="171dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361">
+
+        <!--    Two table rows ( 1 for Food name, 1 for Food Description-->
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="@string/chicken_biriyani"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Spiced Rice with Indian spices"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Veg Biriyani"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Spiced Rice with Indian spices"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Halwa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Sweet"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Butter Naan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Flatbread with butter flavor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Chilli Parotta"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Spicy flatbread with chicken"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Sambar Rice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Dal Rice with Indian spices"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fItem7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Tomato Rice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/fDesc7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Rice mixed with Tomato curry"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="218dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361">
+
+        <!--    Each Table row with Price, Increase button, Quantity and Decrease Button-->
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$7.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity1"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$6.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity2"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$6.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity3"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$6.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity4"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$6.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity5"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$6.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus6"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity6"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus6"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fPrice7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="$6.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnPlus7"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fQuantity7"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/btnMinus7"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:padding="3dp"
+        android:text="Save for later"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:padding="3dp"
+        android:text="Pay"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="395dp"
+        android:layout_height="40dp"
+        android:background="@color/primaryLightColor"
+        android:backgroundTint="@color/primaryLightColor"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:text="Total:"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:text="$0.00"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.858" />
+</androidx.constraintlayout.widget.ConstraintLayout>

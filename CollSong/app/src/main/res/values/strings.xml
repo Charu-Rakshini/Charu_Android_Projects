@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CollSong</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Lyrics</string>
+    <string name="tab_text_3">Tune</string>
+    <string name="tab_text_4">Voice</string>
+</resources>
